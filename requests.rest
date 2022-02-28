@@ -1,0 +1,24 @@
+
+###
+GET http://localhost:3000/todo HTTP/1.1
+
+
+###
+POST http://localhost:3000/todo HTTP/1.1
+content-type: application/json
+
+{
+    "name": "dalii",
+    "description": "dmsjqf"
+}
+
+###
+DELETE  http://localhost:3000/todo/28e886aa-2122-4a76-8324-5941e50f6a0e HTTP/1.1
+
+###
+PUT http://localhost:3000/todo/1dbe2b7f-6bb0-4a93-ada6-ca311f13dacb HTTP/1.1
+content-type: application/json
+
+{
+    "status": "done"
+}
