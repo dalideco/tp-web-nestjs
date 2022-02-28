@@ -12,6 +12,6 @@ export class TodoModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
       .apply(ValidationMiddleware)
-      .forRoutes('cats');
+      .forRoutes('todo');
   }
 }

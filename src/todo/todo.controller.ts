@@ -31,7 +31,9 @@ export class TodoController {
   }
 
   @Post()
-  addTodo(@Body() newTodo: AddToDoDto): Todo {
+  addTodo(
+    @Body() newTodo: AddToDoDto
+  ): Todo {
     return this.service.addTodo(newTodo)
   } 
 
